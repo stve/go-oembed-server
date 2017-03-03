@@ -1,1 +1,1 @@
-web: go-opengraph-server
+web: go-oembed-server
