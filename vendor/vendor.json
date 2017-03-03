@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"heroku": {
+		"goVersion": "go1.8",
+		"install": [
+			"."
+		]
+	},
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "188+HYhuDlfMnFuYhpxjfFeCOE8=",
+			"path": "github.com/widnyana/oembed",
+			"revision": "10d5df7453bf96ae5fae7f451ec886c7e7e15e25",
+			"revisionTime": "2016-03-07T11:42:38Z"
+		}
+	],
+	"rootPath": "github.com/stve/go-oembed-server"
+}
