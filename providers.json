@@ -488,6 +488,20 @@
         ]
     },
     {
+        "provider_name": "FrameBuzz",
+        "provider_url": "https:\/\/framebuzz.com\/",
+        "endpoints": [
+            {
+                "schemes": [
+                    "http:\/\/framebuzz.com\/v\/*",
+                    "https:\/\/framebuzz.com\/v\/*"
+                ],
+                "url": "https:\/\/framebuzz.com\/oembed\/",
+                "discovery": true
+            }
+        ]
+    },
+    {
         "provider_name": "FunnyOrDie",
         "provider_url": "http:\/\/www.funnyordie.com\/",
         "endpoints": [
@@ -571,6 +585,20 @@
                     "https:\/\/www.gfycat.com\/*"
                 ],
                 "url": "https:\/\/api.gfycat.com\/v1\/oembed",
+                "discovery": true
+            }
+        ]
+    },
+    {
+        "provider_name": "GIPHY",
+        "provider_url": "https:\/\/giphy.com",
+        "endpoints": [
+            {
+                "schemes": [
+                    "http:\/\/giphy.com\/*",
+                    "https:\/\/giphy.com\/*"
+                ],
+                "url": "http:\/\/giphy.com\/services\/oembed",
                 "discovery": true
             }
         ]
@@ -663,6 +691,34 @@
                     "https:\/\/infogr.am\/*"
                 ],
                 "url": "https:\/\/infogr.am\/oembed"
+            }
+        ]
+    },
+    {
+        "provider_name": "Inoreader",
+        "provider_url": "https:\/\/www.inoreader.com",
+        "endpoints": [
+            {
+                "schemes": [
+                    "https:\/\/www.inoreader.com\/oembed\/"
+                ],
+                "url": "https:\/\/www.inoreader.com\/oembed\/api\/",
+                "discovery": true
+            }
+        ]
+    },
+    {
+        "provider_name": "inphood",
+        "provider_url": "http:\/\/inphood.com\/",
+        "endpoints": [
+            {
+                "schemes": [
+                    "http:\/\/*.inphood.com\/*"
+                ],
+                "url": "http:\/\/api.inphood.com\/oembed",
+                "formats": [
+                    "json"
+                ]
             }
         ]
     },
@@ -889,6 +945,28 @@
         ]
     },
     {
+        "provider_name": "Orbitvu",
+        "provider_url": "https:\/\/orbitvu.co",
+        "endpoints": [
+            {
+                "schemes": [
+                    "https:\/\/orbitvu.co\/001\/*\/ov3601\/view",
+                    "https:\/\/orbitvu.co\/001\/*\/ov3601\/*\/view",
+                    "https:\/\/orbitvu.co\/001\/*\/ov3602\/*\/view",
+                    "https:\/\/orbitvu.co\/001\/*\/2\/orbittour\/*\/view",
+                    "https:\/\/orbitvu.co\/001\/*\/1\/2\/orbittour\/*\/view",
+                    "http:\/\/orbitvu.co\/001\/*\/ov3601\/view",
+                    "http:\/\/orbitvu.co\/001\/*\/ov3601\/*\/view",
+                    "http:\/\/orbitvu.co\/001\/*\/ov3602\/*\/view",
+                    "http:\/\/orbitvu.co\/001\/*\/2\/orbittour\/*\/view",
+                    "http:\/\/orbitvu.co\/001\/*\/1\/2\/orbittour\/*\/view"
+                ],
+                "url": "http:\/\/orbitvu.co\/service\/oembed",
+                "discovery": true
+            }
+        ]
+    },
+    {
         "provider_name": "Oumy",
         "provider_url": "https:\/\/www.oumy.com\/",
         "endpoints": [
@@ -1073,25 +1151,6 @@
                 ],
                 "url": "https:\/\/www.reverbnation.com\/oembed",
                 "discovery": true
-            }
-        ]
-    },
-    {
-        "provider_name": "RightThisMinute",
-        "provider_url": "http:\/\/www.rightthisminute.com",
-        "endpoints": [
-            {
-                "schemes": [
-                    "http:\/\/www.rightthisminute.com\/tv\/episode\/*",
-                    "http:\/\/www.rightthisminute.com\/post\/*",
-                    "http:\/\/www.rightthisminute.com\/slideshow\/*",
-                    "http:\/\/www.rightthisminute.com\/video\/*"
-                ],
-                "url": "https:\/\/www.rightthisminute.com\/oembed",
-                "discovery": true,
-                "formats": [
-                    "json"
-                ]
             }
         ]
     },
@@ -1436,6 +1495,26 @@
         ]
     },
     {
+        "provider_name": "TickCounter",
+        "provider_url": "https:\/\/www.tickcounter.com",
+        "endpoints": [
+            {
+                "schemes": [
+                    "http:\/\/www.tickcounter.com\/countdown\/*",
+                    "http:\/\/www.tickcounter.com\/countup\/*",
+                    "http:\/\/www.tickcounter.com\/ticker\/*",
+                    "http:\/\/www.tickcounter.com\/worldclock\/*",
+                    "https:\/\/www.tickcounter.com\/countdown\/*",
+                    "https:\/\/www.tickcounter.com\/countup\/*",
+                    "https:\/\/www.tickcounter.com\/ticker\/*",
+                    "https:\/\/www.tickcounter.com\/worldclock\/*"
+                ],
+                "url": "https:\/\/www.tickcounter.com\/oembed",
+                "discovery": true
+            }
+        ]
+    },
+    {
         "provider_name": "Topy",
         "provider_url": "http:\/\/www.topy.se\/",
         "endpoints": [
@@ -1508,6 +1587,26 @@
                     "http:\/\/uttles.com\/uttle\/*"
                 ],
                 "url": "http:\/\/uttles.com\/api\/reply\/oembed",
+                "discovery": true
+            }
+        ]
+    },
+    {
+        "provider_name": "VeeR VR",
+        "provider_url": "http:\/\/veer.tv\/",
+        "endpoints": [
+            {
+                "schemes": [
+                    "http:\/\/veer.tv\/videos\/*"
+                ],
+                "url": "https:\/\/api.veer.tv\/oembed",
+                "discovery": true
+            },
+            {
+                "schemes": [
+                    "http:\/\/veervr.tv\/videos\/*"
+                ],
+                "url": "https:\/\/api.veervr.tv\/oembed",
                 "discovery": true
             }
         ]
