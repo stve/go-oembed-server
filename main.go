@@ -13,6 +13,7 @@ import (
 
 // Error - default error message type
 type Error struct {
+	Type    string `json:"type"`
 	Message string `json:"message"`
 }
 
@@ -68,7 +69,7 @@ func extract(w http.ResponseWriter, r *http.Request) {
 }
 
 func writeError(encoder *json.Encoder, message string) {
-	if err := encoder.Encode(Error{Message: message}); err != nil {
+	if err := encoder.Encode(Error{Type: "error", Message: message}); err != nil {
 		panic(err)
 	}
 }
